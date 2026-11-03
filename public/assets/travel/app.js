@@ -1,0 +1,3 @@
+document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));button.classList.add('active');document.querySelectorAll('.route-card').forEach(card=>card.hidden=button.dataset.filter!=='all'&&card.dataset.region!==button.dataset.filter)}));
+document.querySelectorAll('.route-book').forEach(link=>link.addEventListener('click',()=>{const select=document.querySelector('[name="destination"]');if(select)select.value=link.dataset.destination}));
+document.querySelector('.menu-toggle')?.addEventListener('click',()=>document.querySelector('.nav').classList.toggle('mobile-open'));
